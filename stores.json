@@ -1,0 +1,260 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.753493, 40.660532]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "Branch",
+        "hours": "9am - 6pm",
+        "description": "145-68 228th St Unit 2, Springfield Gardens, NY 11413",
+        "name": "K Line Logistics - New York",
+        "phone": "+1 (718) 520-1658",
+        "url": "https://maps.app.goo.gl/NvkZE1ehpAbdaRYe6",
+        "storeid": "01"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.29101476082197, 33.85222911250445]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "Branch",
+        "hours": "9am - 6pm",
+        "description": "19701 Vermont Ave, Torrance, CA 90502",
+        "name": "K Line Logistics - Los Angeles",
+        "phone": "+1 (310) 615-0555",
+        "url": "https://maps.app.goo.gl/id9YhQajWYUmnhru9",
+        "storeid": "02"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-87.99731848880427, 41.97950164342631]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "Branch",
+        "hours": "8am - 5pm",
+        "description": "265 S Prospect Ave, Itasca, IL 60143",
+        "name": "K Line Logistics - Chicago",
+        "phone": "+1 (630) 250-0337",
+        "url": "https://maps.app.goo.gl/K3shyp6yFey81u9f8",
+        "storeid": "03"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.9912838, 50.8000418]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "patisserie",
+        "hours": "10am - 6pm",
+        "description": "A gourmet patisserie that will delight your senses. We're part of a larger chain of patisseries and cafes.",
+        "name": "Josie's Patisserie Wimborne",
+        "phone": "+44 1202 343434",
+        "storeid": "04"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2.985933, 53.408899]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "Branch",
+        "hours": "8am - 5pm",
+        "description": "4345 International Pkwy Suite 101, Atlanta, GA 30354",
+        "name": "K Line Logistics - Atlanta",
+        "phone": "+1 (404) 363-9000",
+        "url": "https://maps.app.goo.gl/GHWCfH8FesNiC3eo9",
+        "storeid": "05"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-97.01919152142311, 32.96054509977207]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "Branch",
+        "hours": "9am - 6pm",
+        "description": "9160 Sterling Street Suite 120, Irving, TX 75063",
+        "name": "K Line Logistics - Dallas",
+        "phone": "+1 (817) 481-7841",
+        "url": "https://maps.app.goo.gl/LKj584dx2ddekrDj7",
+        "storeid": "06"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.67524621994687, 48.30054104553534]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "Branch",
+        "hours": "9am - 6pm",
+        "description": "40 A Broderick Road, Burlingame, CA 94010",
+        "name": "K Line Logistics - San Fransisco",
+        "phone": "+1 (650) 993-7370",
+        "url": "https://maps.app.goo.gl/3syekWSjkEQnY5dW6",
+        "storeid": "07"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.47336946218485, 47.96940784765555]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "Branch",
+        "hours": "9am - 6pm",
+        "description": "855 South 192nd Street Seatac, WA 96148",
+        "name": "K Line Logistics - Seattle",
+        "phone": "+1 (206) 824-1785",
+        "url": "https://maps.app.goo.gl/b8UhiwemM1VU3RkF7",
+        "storeid": "08"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-98.22871063985212, 26.139153654992324]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "Branch",
+        "hours": "9am - 6pm",
+        "description": "7801 S Jackson Road Pharr, TX 78577",
+        "name": "K Line Logistics - McAllen",
+        "phone": "+1 (956) 843-7665",
+        "url": "https://maps.app.goo.gl/4LGAPoBLTZYXXZJTA",
+        "storeid": "09"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-117.1669394744985, 32.88955497637457]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "Office",
+        "hours": "9am - 5pm",
+        "description": "7220 Trade St, Suite 216 San Diego, CA 92121",
+        "name": "K Line Logistics - San Diego",
+        "phone": "+1 (858) 695-8270",
+        "url": "https://maps.app.goo.gl/G74Jx6xmPbaj7HVy5",
+        "storeid": "10"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-111.93947895361012, 33.43127311322803]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "Office",
+        "hours": "8am - 5pm",
+        "description": "60 E Rio Salado Parkway, Suite 900 Tempe, AZ 85281",
+        "name": "K Line Logistics - Phoenix",
+        "phone": "+1 (480) 366-1472",
+        "url": "https://maps.app.goo.gl/JT7tV6mHEa9yi2MN9",
+        "storeid": "11"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-83.11252360746748, 40.00073660545017]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "Office",
+        "hours": "8am - 5pm",
+        "description": "2315 Westbrooke Drive Columbus, Ohio 43228",
+        "name": "K Line Logistics - Columbus",
+        "phone": "+1 (614) 987-1165",
+        "url": "https://maps.app.goo.gl/WX1ZHkVh7BjLUfzi9",
+        "storeid": "12"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-84.491037528719, 38.02959276690669]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "Office",
+        "hours": "8am - 5pm",
+        "description": "824 Euclid Ave, Suite A-202B Lexington, KY 40502",
+        "name": "K Line Logistics - Lexington",
+        "phone": "+1 (859) 523-0305",
+        "url": "https://maps.app.goo.gl/vYBkATqok3sQAeA87",
+        "storeid": "13"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-96.70302446840006, 40.81173983081313]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "Office",
+        "hours": "8am - 5pm",
+        "description": "233 South 13th Street, Suite 1126 Lincoln, NE 68508",
+        "name": "K Line Logistics - Lincoln",
+        "phone": "+1 (402) 835-5664",
+        "url": "https://maps.app.goo.gl/a5rNVatFVBnaFaUp9",
+        "storeid": "14"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-80.84095550363283, 35.15062951656816]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "Office",
+        "hours": "8am - 5pm",
+        "description": "5960 Fairview Rd Suite 400, Charlotte NC 28210",
+        "name": "K Line Logistics - Charlotte",
+        "phone": "+1 (704) 414-6550",
+        "url": "https://maps.app.goo.gl/mDRBMBzs1DkLyRks5",
+        "storeid": "15"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-86.67429350251356, 34.697403226840734]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "Office",
+        "hours": "8am - 5pm",
+        "description": "4100 Market Stree Suite 100, Huntsville, AL 35808",
+        "name": "K Line Logistics - Huntsville",
+        "phone": "+1 (256) 289-7075",
+        "url": "https://maps.app.goo.gl/q33zZEYHpQJ8BFrv9",
+        "storeid": "16"
+      }
+    }
+  ]
+}
