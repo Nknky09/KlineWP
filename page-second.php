@@ -117,27 +117,15 @@
           <h1>Locations</h1>
           <div class="title-line"></div>
             <div class="container-locations">
-              <div id="map"></div>
-              <div class="sidebar-map"> 
-                <h3>K Line Logistics USA</h3>
-                  <div class="sidebar-map-wrapper">
-                  
-                    <span class="location-item"><img src="<?php echo get_template_directory_uri(); ?>/logo/logo-icon.png"><a onclick="myClick(0);" >New York</a></span><br>
-                    <span class="location-item"><img src="<?php echo get_template_directory_uri(); ?>/logo/logo-icon.png"><a onclick="myClick(1);" >Los Angeles</a></span><br>
-                    <span class="location-item"><img src="<?php echo get_template_directory_uri(); ?>/logo/logo-icon.png"><a onclick="myClick(2);" >Chicago</a></span><br>
-                    <span class="location-item"><img src="<?php echo get_template_directory_uri(); ?>/logo/logo-icon.png"><a onclick="myClick(3);" >Atlanta</a></span><br>
-                    <span class="location-item"><img src="<?php echo get_template_directory_uri(); ?>/logo/logo-icon.png"><a onclick="myClick(4);" >Dallas</a></span><br>
-                    <span class="location-item"><img src="<?php echo get_template_directory_uri(); ?>/logo/logo-icon.png"><a onclick="myClick(5);" >San Fransisco</a></span><br>
-                    <span class="location-item"><img src="<?php echo get_template_directory_uri(); ?>/logo/logo-icon.png"><a onclick="myClick(6);" >Seattle</a></span><br>
-                    <span class="location-item"><img src="<?php echo get_template_directory_uri(); ?>/logo/logo-icon.png"><a onclick="myClick(7);" >McAllen</a></span><br>
-                    <span class="location-item"><img src="<?php echo get_template_directory_uri(); ?>/logo/logo-icon.png"><a onclick="myClick(8);" >San Diego</a></span><br>
-                    <span class="location-item"><img src="<?php echo get_template_directory_uri(); ?>/logo/logo-icon.png"><a onclick="myClick(9);" >Phoneix</a></span><br>
-                    <span class="location-item"><img src="<?php echo get_template_directory_uri(); ?>/logo/logo-icon.png"><a onclick="myClick(10);" >Columbus</a></span><br>
-                    <span class="location-item"><img src="<?php echo get_template_directory_uri(); ?>/logo/logo-icon.png"><a onclick="myClick(11);" >Lexington</a></span><br>
-                    <span class="location-item"><img src="<?php echo get_template_directory_uri(); ?>/logo/logo-icon.png"><a onclick="myClick(12);" >Lincoln</a></span><br>
-                    <span class="location-item"><img src="<?php echo get_template_directory_uri(); ?>/logo/logo-icon.png"><a onclick="myClick(13);" >Charlotte</a></span><br>
-                    <span class="location-item"><img src="<?php echo get_template_directory_uri(); ?>/logo/logo-icon.png"><a onclick="myClick(14);" >Huntsville</a></span><br>
-                  </div>
+
+              <div class="map-wrapper">
+                <div id="map" class="map-container">
+                  <aside class="sidebar-map">
+                    <ul class="store-list">
+
+                    </ul>
+                  </aside>
+                </div>
               </div>
           
           </div>
@@ -155,5 +143,8 @@
           </div>
         </div>
       </content>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzqVkPiLgOIHI0j8U_MXQ8Fi4RhsRhkac&callback=initMap"></script>
+
 
 <?php get_footer();?>
