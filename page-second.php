@@ -2,7 +2,10 @@
 
 <content>
         <div class="content-banner-two">
-          
+          <img class="bg-image" src="<?php echo get_template_directory_uri(); ?>/img/Untitled2.png"/>
+           <div class="home-logo">
+            <img class="bg-logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" />
+          </div>
         </div>
         <div class="background-about-front">
           <div class="content-about-front">

@@ -4,6 +4,7 @@
         <div class="content-banner">
           <div class="home-logo">
             <img src="<?php echo get_template_directory_uri(); ?>/img/logo_white-p-500.png" />
+            
           </div>
         </div>
         <div class="background-about-front">

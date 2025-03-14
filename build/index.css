@@ -214,32 +214,27 @@ main {
 .content-banner-two {
   width: 100%;
   height: 850px;
-  background-image: url("../img/newbg1.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-  margin-top: 80px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 100px;
 }
 
-.content-banner-three {
+.bg-image {
   width: 100%;
   height: 850px;
-  background-image: url("../img/newbg2.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  margin-top: 80px;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.content-banner-four {
-  width: 100%;
-  height: 850px;
-  background-image: url("../img/newbg3.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  margin-top: 80px;
+.bg-logo {
+  opacity: 0.6;
+}
+
+.bg-four {
+  opacity: 0.9;
 }
 
 .home-logo {
@@ -250,20 +245,17 @@ main {
   left: 150px;
   width: 600px;
   height: 70px;
-  opacity: 0.9;
 }
 
-.home-logo-two {
+.home-logo2 {
+  width: inherit;
+  height: inherit;
   position: relative;
-  top: 1%;
-  left: 2%;
-  width: 200px;
+  top: 150px;
+  left: 700px;
+  width: 600px;
+  height: 70px;
   opacity: 0.7;
-}
-
-.home-logo-two img {
-  width: 300px;
-  height: 45px;
 }
 
 .icon-home {

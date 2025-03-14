@@ -1,9 +1,10 @@
 <?php get_header(); ?>
 
 <content>
-        <div class="content-banner-four">
-          <div class="home-logo">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/logo_white-p-500.png" />
+        <div class="content-banner-two bg-four">
+          <img class="bg-image" src="<?php echo get_template_directory_uri(); ?>/img/newbg3.jpg"/>
+           <div class="home-logo2">
+            <img class="bg-logo2" src="<?php echo get_template_directory_uri(); ?>/img/logo_white-p-500.png" />
           </div>
         </div>
         <div class="background-about-front">
