@@ -230,7 +230,9 @@ main {
 }
 
 .bg-logo {
-  opacity: 0.6;
+  opacity: 1;
+  width: 600px;
+  height: auto;
 }
 
 .bg-four {
@@ -241,9 +243,9 @@ main {
   width: inherit;
   height: inherit;
   position: relative;
-  top: 150px;
+  top: 270px;
   left: 150px;
-  width: 600px;
+  width: 700px;
   height: 70px;
 }
 
@@ -251,19 +253,35 @@ main {
   width: inherit;
   height: inherit;
   position: relative;
-  top: 160px;
-  left: 52%;
+  top: 340px;
+  left: 49%;
   transform: translate(-50%, -50%);
   width: 600px;
   height: 70px;
-  opacity: 0.7;
+  opacity: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.home-logo3 {
+  width: inherit;
+  height: inherit;
+  position: relative;
+  top: 290px;
+  left: 150px;
+  width: 700px;
+  height: 70px;
+}
+
+.bg-logo3 {
+  opacity: 1;
+  width: 600px;
+  height: auto;
+}
+
 .home-logo2 img {
-  width: 85%;
+  width: 100%;
 }
 
 .icon-home {

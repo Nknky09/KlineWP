@@ -3,8 +3,8 @@
 <content>
         <div class="content-banner-two">
           <img class="bg-image" src="<?php echo get_template_directory_uri(); ?>/img/newbg2.jpg"/>
-           <div class="home-logo">
-            <img class="bg-logo2" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" />
+           <div class="home-logo3">
+            <img class="bg-logo3" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" />
           </div>
         </div>
         <div class="background-about-front">
