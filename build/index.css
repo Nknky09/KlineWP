@@ -527,6 +527,8 @@ p {
   display: flexbox;
 }
 
+/* map styling */
+
 #map {
   height: 95%;
   width: 746px;
@@ -576,6 +578,68 @@ p {
 .location-item a:hover {
   background-color: #e9e9e9;
 }
+
+/* Reset Map Button */
+.reset-map-button {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 8px 14px;
+  border-radius: 6px;
+  margin: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s ease;
+}
+.reset-map-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Shrink InfoWindow close button spacing */
+.gm-style-iw-d {
+  padding: 6px !important;
+}
+
+.gm-ui-hover-effect {
+  width: 32px !important;
+  height: 32px !important;
+  top: 6px !important;
+  right: 6px !important;
+}
+
+/* InfoWindow Styling */
+.map-infowindow {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #333;
+  width: 275px;
+  height: inherit;
+}
+.map-location-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #00457c;
+}
+.map-location-desc {
+  margin: 3px 0 8px;
+}
+.map-location-info {
+  margin: 2px 0;
+}
+.map-direction-link {
+  display: inline-block;
+  margin-top: 6px;
+  color: #0077cc;
+  font-weight: 500;
+  text-decoration: none;
+}
+.map-direction-link:hover {
+  text-decoration: underline;
+}
+
+/* end of maps */
 
 .g-recaptcha {
   margin: 0 auto;
