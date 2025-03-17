@@ -523,60 +523,125 @@ p {
 
 .container-locations {
   width: 100%;
-  height: 750px;
+  height: 700px;
   display: flexbox;
 }
 
 /* map styling */
 
 #map {
-  height: 95%;
-  width: 746px;
+  height: 100%;
+  width: 770px;
   float: right;
   border: 1px solid #ddd;
 }
 
+/* Container next to map */
 .sidebar-map {
-  width: 250px;
-  height: 95%;
-  background-color: #fafafa;
-  border: 1px solid #ddd;
-  float: left;
-  transition: background-color 0.3s ease;
+  width: 225px;
+  height: 100%;
+  max-height: 750px; /* adjust to match your map container */
+  background-color: #ffffff;
+  border-right: 2px solid #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.05);
+  z-index: 2;
 }
 
+/* Sidebar Inner Wrapper */
 .sidebar-map-wrapper {
-  width: 50%;
-  height: 75%;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.sidebar-map h3 {
-  font-size: 16px;
-  color: #444;
-  padding-top: 30px;
-  text-shadow: #f0e6e6 1px 1px;
-}
-
-.location-item img {
-  width: 15px;
-  height: 15px;
-  margin-right: 5px;
-  position: relative;
-  top: 3px;
-}
-
-.location-item a {
-  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
-  color: #555;
-  text-decoration: none;
-  border-bottom: 1px rgb(202, 202, 202) solid;
+  color: #444;
+  overflow-y: auto;
 }
 
-.location-item a:hover {
-  background-color: #e9e9e9;
+/* Each Location Item */
+.sidebar-map-wrapper .location-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #cd191c;
+}
+
+.sidebar-map-wrapper .location-item:hover a {
+  background-color: #f8f8f8;
+  transform: translateX(3px);
+  border-left-color: #a91313;
+  color: #cd191c;
+}
+
+/* Icon in Location Item 
+.sidebar-map-wrapper .location-item img {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}*/
+
+/* Link/Text */
+.sidebar-map-wrapper .location-item a {
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 1.3;
+  transition: color 0.2s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar-map {
+    width: 100%;
+    max-height: 250px;
+    order: 2;
+    border-right: none;
+    border-top: 2px solid #e4e4e4;
+  }
+
+  .sidebar-map-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .sidebar-map-wrapper .location-item {
+    width: 48%;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar-map-wrapper .location-item {
+    width: 100%;
+  }
+}
+
+/* Sidebar Search Input */
+.map-location-search {
+  padding: 10px 14px;
+  margin: 0 auto;
+  width: 60%;
+  border: 1px solid #9b9b9b;
+  border-radius: 8px;
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.map-location-search:focus {
+  border-color: #cd191c;
+  box-shadow: 0 0 3px rgba(205, 25, 28, 0.3);
 }
 
 /* Reset Map Button */
@@ -607,36 +672,54 @@ p {
   right: 6px !important;
 }
 
-/* InfoWindow Styling */
+/* Modern InfoWindow Styling */
 .map-infowindow {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 13px;
-  line-height: 1.4;
   color: #333;
-  width: 275px;
-  height: inherit;
+  max-width: 225px;
+  width: fit-content;
+  padding: 6px 8px;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: left;
 }
+
 .map-location-title {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: #00457c;
+  font-size: 14px;
+  font-weight: 600;
+  color: #cd191c;
+  margin: 0 0 6px 0;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #eee;
 }
-.map-location-desc {
-  margin: 3px 0 8px;
-}
+
 .map-location-info {
-  margin: 2px 0;
+  margin: 4px 0;
+  font-size: 12.5px;
+  color: #444;
+  line-height: 1.4;
 }
+
 .map-direction-link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   margin-top: 6px;
+  font-size: 12.5px;
   color: #0077cc;
   font-weight: 500;
   text-decoration: none;
 }
+
 .map-direction-link:hover {
   text-decoration: underline;
+}
+
+.map-direction-icon {
+  height: 13px;
+  width: 13px;
+  margin-right: 6px;
+  flex-shrink: 0;
 }
 
 /* end of maps */

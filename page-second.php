@@ -114,12 +114,12 @@
         <div class="content-banner2"></div>
        
           <div class="content-locations" id="map-container">
-          <h1>Locations</h1>
+          <h1>USA Locations</h1>
           <div class="title-line"></div>
             <div class="container-locations">
               <div id="map"></div>
               <div class="sidebar-map"> 
-                <h3>K Line Logistics USA</h3>
+                <h3>USA Locations</h3>
                   <div class="sidebar-map-wrapper">
                   
                     <span class="location-item"><img src="<?php echo get_template_directory_uri(); ?>/logo/logo-icon.png"><a onclick="myClick(0);" >New York</a></span><br>

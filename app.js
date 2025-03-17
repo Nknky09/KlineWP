@@ -1,6 +1,8 @@
 let map;
 let markers = [];
 let infoWindow;
+let featuresData = [];
+
 const initialCenter = { lat: 39.3350665171602, lng: -97.40382004355706 };
 const initialZoom = 4;
 
@@ -22,7 +24,7 @@ function initMap() {
 
   infoWindow = new google.maps.InfoWindow();
 
-  //  "Reset View" next to Fullscreen button in TOP_RIGHT
+  // Reset View Button
   const resetControlDiv = document.createElement("div");
   const resetControlUI = document.createElement("button");
   resetControlUI.innerText = "Reset View";
@@ -31,11 +33,11 @@ function initMap() {
   resetControlUI.onclick = () => {
     map.setCenter(initialCenter);
     map.setZoom(initialZoom);
+    infoWindow.close();
   };
   resetControlDiv.appendChild(resetControlUI);
   map.controls[google.maps.ControlPosition.TOP].push(resetControlDiv);
 
-  // 👉 Close InfoWindow when clicking outside
   map.addListener("click", () => {
     infoWindow.close();
   });
@@ -43,57 +45,101 @@ function initMap() {
   fetch(`${window.location.origin}/wp-content/themes/KlineWP/stores.json`)
     .then(response => response.json())
     .then(data => {
-      if (data && data.features) {
-        data.features.forEach((feature, index) => {
-          const coords = {
-            lat: feature.geometry.coordinates[1],
-            lng: feature.geometry.coordinates[0],
-          };
-          const props = feature.properties;
+      if (!data || !data.features) return;
+      featuresData = data.features;
 
-          const marker = new google.maps.Marker({
-            position: coords,
-            map,
-            title: props.name,
-            animation: google.maps.Animation.DROP,
-            icon: {
-              url: `${window.location.origin}/wp-content/themes/KlineWP/logo/logo-icon.png`,
-              scaledSize: new google.maps.Size(32, 32),
-            },
-          });
+      const sidebarWrapper = document.getElementById("sidebar-map-wrapper");
+      if (!sidebarWrapper) {
+        console.warn("Sidebar container not found: #sidebar-map-wrapper");
+        return;
+      }
 
-          const contentString = `
-            <div class="map-infowindow">
-              <h4 class="map-location-title">${props.name}</h4>
-              <p class="map-location-desc">${props.description}</p>
-              <p class="map-location-info"><strong>Hours:</strong> ${props.hours}</p>
-              <p class="map-location-info"><strong>Phone:</strong> ${props.phone}</p>
-              <a href="${props.url}" class="map-direction-link" target="_blank">
-                <img src="https://maps.gstatic.com/favicon3.ico" alt="Google Maps" style="height: 14px; vertical-align: middle; margin-right: 5px;">
-                Get Directions
-              </a>
-            </div>
-          `;
+      data.features.forEach((feature, index) => {
+        const coords = {
+          lat: feature.geometry.coordinates[1],
+          lng: feature.geometry.coordinates[0],
+        };
+        const props = feature.properties;
 
-          marker.addListener("click", () => {
-            infoWindow.setContent(contentString);
-            infoWindow.open(map, marker);
-            map.setCenter(marker.getPosition());
-            map.setZoom(12);
-          });
-
-          markers.push(marker);
+        const marker = new google.maps.Marker({
+          position: coords,
+          map,
+          title: props.name,
+          animation: google.maps.Animation.DROP,
+          icon: {
+            url: `${window.location.origin}/wp-content/themes/KlineWP/logo/logo-icon.png`,
+            scaledSize: new google.maps.Size(32, 32),
+          },
         });
 
-        // Global myClick() to simulate zoom-on-sidebar-click
-        window.myClick = function (index) {
-          if (markers[index]) {
-            google.maps.event.trigger(markers[index], "click");
-          }
-        };
+        const contentString = `
+          <div class="map-infowindow">
+            <h4 class="map-location-title">${props.name}</h4>
+          
+              <span class="map-location-info"><strong>Address:</strong> ${props.description}</span><br>
+              <span class="map-location-info"><strong>Hours:</strong> ${props.hours}</span><br>
+              <span class="map-location-info"><strong>Phone:</strong> ${props.phone}</span>
+              <a href="${props.url}" class="map-direction-link" target="_blank">
+                <img src="https://maps.gstatic.com/favicon3.ico" alt="Google Maps" class="map-direction-icon">
+                Open in GoogleMaps
+              </a>
+        
+          </div>
+        `;
+
+        marker.addListener("click", () => {
+          infoWindow.setContent(contentString);
+          infoWindow.open(map, marker);
+          map.setCenter(marker.getPosition());
+          map.setZoom(12);
+        });
+
+        markers.push(marker);
+
+        const locationItem = document.createElement("div");
+        locationItem.className = "location-item";
+        locationItem.setAttribute("data-state", props.state);
+        locationItem.style.display = "flex";
+        locationItem.style.alignItems = "center";
+        locationItem.style.marginBottom = "10px";
+        locationItem.style.cursor = "pointer";
+
+        locationItem.addEventListener("click", () => {
+          infoWindow.setContent(contentString);
+          infoWindow.open(map, marker);
+          map.setCenter(marker.getPosition());
+          map.setZoom(12);
+        });
+
+        const link = document.createElement("a");
+        link.textContent = props.name.replace("K Line Logistics - ", "");
+        link.href = "javascript:void(0)";
+        locationItem.appendChild(link);
+        sidebarWrapper.appendChild(locationItem);
+      });
+
+      const searchInput = document.getElementById("map-location-search");
+      if (searchInput) {
+        searchInput.addEventListener("input", function () {
+          const keyword = this.value.toLowerCase();
+          const items = document.querySelectorAll(
+            ".sidebar-map-wrapper .location-item"
+          );
+          items.forEach(item => {
+            const locationText =
+              item.querySelector("a")?.textContent.toLowerCase() || "";
+            const stateText =
+              item.getAttribute("data-state")?.toLowerCase() || "";
+            if (locationText.includes(keyword) || stateText.includes(keyword)) {
+              item.style.display = "flex";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
       }
     })
     .catch(error => {
-      console.error("Failed to load store data:", error);
+      console.error("Error loading stores.json:", error);
     });
 }
