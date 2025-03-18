@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "Roboto";
   font-weight: normal;
@@ -246,9 +250,9 @@ main {
   width: inherit;
   height: inherit;
   position: relative;
-  top: 270px;
-  left: 150px;
-  width: 700px;
+  top: 130px;
+  left: 130px;
+  width: 500px;
   height: 70px;
 }
 
@@ -256,7 +260,17 @@ main {
   width: inherit;
   height: inherit;
   position: relative;
-  top: 340px;
+  top: 270px;
+  left: 150px;
+  width: 700px;
+  height: 70px;
+}
+
+.home-logo4 {
+  width: inherit;
+  height: inherit;
+  position: relative;
+  top: 270px;
   left: 49%;
   transform: translate(-50%, -50%);
   width: 600px;
