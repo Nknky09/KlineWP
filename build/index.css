@@ -98,11 +98,13 @@ main {
   margin: 0;
   list-style: none;
   position: relative;
+  border-radius: 10px;
 }
 
 .main-nav li {
   width: auto;
   margin: 0;
+  border-radius: 10px;
 }
 
 .main-nav a {
@@ -115,6 +117,7 @@ main {
   padding: 0 30px;
   font-size: 19px;
   color: #605e5e;
+  border-radius: 10px;
 }
 
 .main-nav a:hover {
@@ -126,7 +129,7 @@ main {
 }
 
 .main-nav ul li ul li:hover {
-  background-color: #605e5e;
+  background-color: #cd191c;
   transition: 0.4s;
   box-shadow: 0 0 1px #2b2a2a;
 }
@@ -498,6 +501,12 @@ p {
   text-decoration: none;
 }
 
+.column-bottom a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 .column-bottom p {
   margin-left: 10px;
 }
@@ -758,6 +767,10 @@ footer p {
   float: right;
   width: 150px;
   margin-top: 45px;
+}
+
+.footer-right a:hover {
+  transform: translateY(2px);
 }
 
 .container-about {
