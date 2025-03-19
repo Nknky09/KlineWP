@@ -235,23 +235,6 @@
         "url": "https://maps.app.goo.gl/mDRBMBzs1DkLyRks5",
         "storeid": "14"
       }
-    },
-    {
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-86.67429350251356, 34.697403226840734]
-      },
-      "type": "Feature",
-      "properties": {
-        "category": "Office",
-        "hours": "8am - 5pm",
-        "description": "4100 Market Street Suite 100, Huntsville, AL 35808",
-        "name": "K Line Logistics - Huntsville",
-        "state": "Alabama",
-        "phone": "+1 (256) 289-7075",
-        "url": "https://maps.app.goo.gl/q33zZEYHpQJ8BFrv9",
-        "storeid": "15"
-      }
     }
   ]
 }

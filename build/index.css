@@ -247,8 +247,6 @@ main {
 }
 
 .home-logo {
-  width: inherit;
-  height: inherit;
   position: relative;
   top: 130px;
   left: 130px;
@@ -257,24 +255,20 @@ main {
 }
 
 .home-logo2 {
-  width: inherit;
-  height: inherit;
   position: relative;
-  top: 270px;
-  left: 150px;
-  width: 700px;
-  height: 70px;
+  top: 35%;
+  left: 10%;
+  width: 460px;
+  height: auto;
 }
 
 .home-logo4 {
-  width: inherit;
-  height: inherit;
   position: relative;
   top: 270px;
   left: 49%;
   transform: translate(-50%, -50%);
   width: 600px;
-  height: 70px;
+  height: auto;
   opacity: 1;
   display: flex;
   justify-content: center;
@@ -282,23 +276,18 @@ main {
 }
 
 .home-logo3 {
-  width: inherit;
-  height: inherit;
   position: relative;
-  top: 290px;
-  left: 150px;
-  width: 700px;
-  height: 70px;
+  top: 33%;
+  left: 11%;
+  width: 550px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bg-logo3 {
   opacity: 1;
-  width: 600px;
-  height: auto;
-}
-
-.home-logo2 img {
-  width: 100%;
 }
 
 .icon-home {
@@ -318,16 +307,40 @@ main {
   opacity: 0.9;
 }
 
-.background-about-front {
-  width: 100%;
-  height: auto;
-  background-color: rgb(245, 238, 238);
+/* Modern Section Styling */
+.section-modern {
+  background: linear-gradient(135deg, #ffffff 0%, #fffdfe 100%);
+  padding: 50px 0;
+  transition: background 0.6s ease-in-out;
 }
 
+.section-glass {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 60px;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 1100px;
+}
+
+/* Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.background-about-front,
 .background-contact {
   width: 100%;
   height: auto;
-  background-color: rgb(245, 238, 238);
 }
 
 .content-about-front,
@@ -406,13 +419,9 @@ p {
 
 .background-services {
   height: auto;
-  width: 1000px;
-  padding: 100px 0;
+  width: 1120px;
+  padding: 100px;
   margin: 0 auto;
-}
-
-.content-services {
-  background-color: rgba(255, 255, 255, 0.973);
 }
 
 .container-services {
@@ -537,7 +546,7 @@ p {
 }
 
 .content-locations {
-  width: 1000px;
+  width: 1120px;
   height: 900px;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.973);
@@ -554,14 +563,14 @@ p {
 
 #map {
   height: 100%;
-  width: 770px;
+  width: 885px;
   float: right;
   border: 1px solid #ddd;
 }
 
 /* Container next to map */
 .sidebar-map {
-  width: 225px;
+  width: 230px;
   height: 100%;
   max-height: 750px; /* adjust to match your map container */
   background-color: #ffffff;

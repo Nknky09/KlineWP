@@ -27,12 +27,8 @@ function pageBanner($args = NULL) {
         <h1 class="page-banner__title"><?php echo $args['title'] ?></h1>
       </div>
     </div>
-    
-
 <?php
 }
-
-
 
 function kline_files() {
   wp_enqueue_script('googleMap', '//maps.googleapis.com/maps/api/js?key=AIzaSyBzqVkPiLgOIHI0j8U_MXQ8Fi4RhsRhkac', NULL, '1.0', true);

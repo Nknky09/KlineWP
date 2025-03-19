@@ -1,14 +1,14 @@
 <?php get_header(); ?>
 
 <content>
-        <div class="content-banner">
+        <div class="content-banner reveal">
           <div class="home-logo">
             <img src="<?php echo get_template_directory_uri(); ?>/img/logo_white-p-500.png" />
             
           </div>
         </div>
-        <div class="background-about-front">
-          <div class="content-about-front">
+        <div class="background-about-front section-modern reveal">
+          <div class="content-about-front section-glass">
             <div class="container-about-front">
               <h1>About &nbsp;&nbsp;"K" Line Logistics</h1>
               <div class="title-line"></div>
@@ -46,9 +46,9 @@
           </div>
         </div>
         
-        <div class="background-services">
+        <div class="background-services section-modern reveal">
         
-        <div class="content-services">
+        <div class="content-services section-glass">
         <h1>Services</h1>
         <div class="title-line"></div>
           <div class="container-services">
@@ -113,7 +113,7 @@
         
         <div class="content-banner2"></div>
        
-          <div class="content-locations" id="map-container">
+          <div class="content-locations reveal" id="map-container">
           <h1>USA Locations</h1>
           <div class="title-line"></div>
             <div class="container-locations">
@@ -128,8 +128,8 @@
           
           </div>
         </div>
-        <div class="background-contact">
-          <div class="content-contact">
+        <div class="background-contact section-modern reveal">
+          <div class="content-contact section-glass">
           
             <h2 class="font-contact-title">Contact</h2>   
             <div class="title-line"></div>
