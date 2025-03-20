@@ -14,6 +14,19 @@ const mapStyle = [
   },
 ];
 
+function tryInitMap(retry = 0) {
+  if (typeof google === "undefined" || typeof google.maps === "undefined") {
+    if (retry < 5) {
+      console.warn(`Google Maps not ready, retrying... (${retry + 1})`);
+      setTimeout(() => tryInitMap(retry + 1), 600);
+    } else {
+      console.error("Google Maps API failed to load.");
+    }
+    return;
+  }
+  initMap();
+}
+
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: initialZoom,
