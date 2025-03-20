@@ -16,17 +16,8 @@
         <div class="header-position">
           <div class="logo">
             <a href="<?php echo site_url() ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" /></a>
-
-            <!-- Hamburger Button (visible on mobile only) -->
-          <div class="mobile-menu-toggle" id="mobileToggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
           </div>
 
-          </div>
-
-          <div class="main-nav-wrapper" id="mainNavWrapper">
           <nav class="main-nav">
             <ul>
               
@@ -86,7 +77,7 @@
               <li><a href="<?php echo site_url('contact') ?>">Contact</a></li>
             </ul>
           </nav>
-          </div>
+       
        
         </div>
         

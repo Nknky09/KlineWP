@@ -1,5 +1,5 @@
-<footer class="section-background">
-        <div class="container section-content footer-container">
+<footer>
+        <div class="footer-container">
           <div class="footer-left">
             <p>© Copyright K Line Logistics 2025</p>
           </div>
@@ -31,15 +31,6 @@
       }, { threshold: 0.1 });
 
       reveals.forEach(el => observer.observe(el));
-    </script>
-
-    <script>
-      const toggle = document.getElementById("mobileToggle");
-      const navWrapper = document.getElementById("mainNavWrapper");
-
-      toggle.addEventListener("click", () => {
-        navWrapper.classList.toggle("show");
-      });
     </script>
 
     <?php wp_footer(); ?>

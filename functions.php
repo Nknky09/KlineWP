@@ -15,7 +15,7 @@ function pageBanner($args = NULL) {
     if (get_field('page_banner_background_image') AND !is_home() AND !is_archive() ) {
       $args['photo'] = get_field('page_banner_background_image')['sizes']['pageBanner'];
     } else {
-      $args['photo'] = get_theme_file_uri('img/shaah-shahidh--subrrYxv8A-unsplash.jpg');
+      $args['photo'] = get_template_file_uri('img/shaah-shahidh--subrrYxv8A-unsplash.jpg');
     }
   }
   ?>

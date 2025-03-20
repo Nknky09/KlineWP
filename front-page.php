@@ -7,9 +7,9 @@
             
           </div>
         </div>
-        <div class="background-about-front section-modern reveal">
-          <div class="content-about-front section-glass">
-            <div class="container-about-front">
+        <div class="section-background section-modern reveal">
+          <div class="container section-content section-glass">
+            <div class="container-about">
               <h1>About &nbsp;&nbsp;"K" Line Logistics</h1>
               <div class="title-line"></div>
               <p>
@@ -30,8 +30,6 @@
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
-
-
               <div class="icon-home">
                   <img class="icon-home-img icon-one" src="<?php echo get_template_directory_uri(); ?>/img/ph--airplane-takeoff-light.png"/>
                   <img class="icon-home-img icon-two" src="<?php echo get_template_directory_uri(); ?>/img/fluent--vehicle-ship-20-regular.png"/>
@@ -46,74 +44,67 @@
           </div>
         </div>
         
-        <div class="background-services section-modern reveal">
+        <div class="section-background section-modern reveal" id="services">
         
-        <div class="content-services section-glass">
+        <div class="container section-content section-glass">
         <h1>Services</h1>
         <div class="title-line"></div>
-          <div class="container-services">
-            
-          
+          <div class="grid-cols-2">
             <div class="card top-left">
-                <div class="image-container">
-                  <a href="#"><img
-                      class="column-img" src="<?php echo get_template_directory_uri(); ?>/img/patrick-campanale-oCsQLKENz34-unsplash (1).jpg"/>
-                      <span class="column-title"><p>Air Cargo</p></span></a>
-                      </div>
-                  <div class="column-bottom">
-                    <a href="#services" class="column-arrow-icon"
-                      ><img src="<?php echo get_template_directory_uri(); ?>/img/Slide Side.png" />
-                      <p>Air Cargo</p></a>
-                  </div>
-                </div>
+              <div class="image-container">
+                <a href="#"><img class="column-img" src="<?php echo get_template_directory_uri(); ?>/img/air-cargo.jpg">
+                <span class="column-title"><p>Air Cargo</p></span></a>
+              </div>
+              <div class="column-bottom">
+                <a href="#services" class="column-arrow-icon">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/Slide Side.png"/>
+                  <p>Air Cargo</p>
+                </a>
+              </div>
+            </div>
 
-        <div class="card top-right">
-         <div class="image-container">
-            <a href="#"><img class="column-img" src="<?php echo get_template_directory_uri(); ?>/img/services-ocean.jpg" />
+            <div class="card top-right">
+              <div class="image-container">
+                <a href="#"><img class="column-img" src="<?php echo get_template_directory_uri(); ?>/img/services-ocean.jpg" >
                 <span class="column-title"><p>Ocean Cargo</p></span></a>
-                </div>
-                  <div class="column-bottom">
-                    <a href="#services" class="column-arrow-icon">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/Slide Side.png" />
-                      <p>Ocean Cargo</p></a>
-                  </div>
               </div>
-              <div class="card bottom-left">
-                <div class="image-container">
-                  <a href="#"><img
-                      class="column-img" src="<?php echo get_template_directory_uri(); ?>/img/services-warehouse.jpg"/>
-                      <span class="column-title"><p>Warehouse</p></span></a>
-                      </div>
-                  <div class="column-bottom">
-                    <a href="#services" class="column-arrow-icon"
-                      ><img src="<?php echo get_template_directory_uri(); ?>/img/Slide Side.png" />
-                      <p>Warehouse</p></a>
-                  </div>
-                </div>
-
+              <div class="column-bottom">
+                <a href="#services" class="column-arrow-icon">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/Slide Side.png" />
+                  <p>Ocean Cargo</p>
+                </a>
+              </div>
+            </div>
+            <div class="card bottom-left">
+              <div class="image-container">
+                <a href="#"><img class="column-img" src="<?php echo get_template_directory_uri(); ?>/img/services-warehouse.jpg"/>
+              <span class="column-title"><p>Warehouse</p></span></a>
+              </div>
+              <div class="column-bottom">
+                <a href="#services" class="column-arrow-icon">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/Slide Side.png" />
+                  <p>Warehouse</p>
+                </a>
+              </div>
+            </div>
+          
             <div class="card bottom-right">
-                <div class="image-container">
-                  <a href="#"
-                    ><img class="column-img" src="<?php echo get_template_directory_uri(); ?>/img/services-custom.jpg" />
-                    <span class="column-title"><p>Customs Clearance</p></span></a
-                  >
-                
-                  </div>
-
-                  <div class="column-bottom">
-                    <a href="#services" class="column-arrow-icon"
-                      ><img src="<?php echo get_template_directory_uri(); ?>/img/Slide Side.png" />
-                      <p>Customs</p></a
-                    >
-                  </div>
+              <div class="image-container">
+                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/services-custom.jpg" />
+                <span class="column-title"><p>Customs Clearance</p></span></a>
               </div>
+              <div class="column-bottom">
+                <a href="#services" class="column-arrow-icon">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/Slide Side.png" />
+                  <p>Customs Clearance</p>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-        </div>
-        
         <div class="content-banner2"></div>
        
-          <div class="content-locations reveal" id="map-container">
+          <div class="container section-content content-locations reveal" id="map-container">
           <h1>USA Locations</h1>
           <div class="title-line"></div>
             <div class="container-locations">
@@ -121,16 +112,13 @@
               <div class="sidebar-map"> 
                 <input type="text" id="map-location-search" class="map-location-search" placeholder="Search Location">
                   <div class="sidebar-map-wrapper" id="sidebar-map-wrapper">
-                  
-                    
                   </div>
               </div>
-          
           </div>
         </div>
-        <div class="background-contact section-modern reveal">
-          <div class="content-contact section-glass">
-          
+        <div class="section-background section-modern reveal">
+          <div class="container section-content section-glass">
+            
             <h2 class="font-contact-title">Contact</h2>   
             <div class="title-line"></div>
               
