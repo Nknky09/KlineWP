@@ -2,33 +2,33 @@
 
 
 function pageBanner($args = NULL) {
+  // Pull values from ACF fields
+  $subtitle = get_field('page_banner_subtitle');
+  $bgImage = get_field('page_banner_background_image');
 
-  if (!isset($args['title'])) {
-    $args['title'] = get_the_title();
+  // Safely extract the URL from the array
+  if (is_array($bgImage) && isset($bgImage['url'])) {
+    $bgImageURL = esc_url($bgImage['url']);
+  } else {
+    $bgImageURL = ''; // fallback or default image URL
   }
 
-  if (!isset($args['subtitle'])) {
-    $args['subtitle'] = get_field('page_banner_subtitle');
-  }
+  $bgImageURL = isset($bgImage['url']) ? esc_url($bgImage['url']) : get_template_directory_uri() . '/img/shaah-shahidh--subrrYxv8A-unsplash.jpg';
 
-  if (!isset($args['photo'])) {
-    if (get_field('page_banner_background_image') AND !is_home() AND !is_archive() ) {
-      $args['photo'] = get_field('page_banner_background_image')['sizes']['pageBanner'];
-    } else {
-      $args['photo'] = get_template_file_uri('img/shaah-shahidh--subrrYxv8A-unsplash.jpg');
-    }
-  }
+
   ?>
-
-    <div class="page-banner">
- 
-      <div class="page-banner__bg-image" style="background-image:url(<?php echo $args['photo']; ?>)"></div>
-      <div class="page-banner__content container container--narrow">
-        <h1 class="page-banner__title"><?php echo $args['title'] ?></h1>
-      </div>
+  <div class="page-banner" style="background-image: url('<?php echo $bgImageURL; ?>')">
+    <div class="page-banner__content container">
+      <?php if ($subtitle): ?>
+        <p class="page-banner__subtitle"><?php echo esc_html($subtitle); ?></p>
+      <?php endif; ?>
     </div>
-<?php
+  </div>
+  <?php
 }
+
+
+
 
 function kline_files() {
   wp_enqueue_script('googleMap', '//maps.googleapis.com/maps/api/js?key=AIzaSyBzqVkPiLgOIHI0j8U_MXQ8Fi4RhsRhkac', NULL, '1.0', true);
