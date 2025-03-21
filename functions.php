@@ -20,7 +20,7 @@ function pageBanner($args = NULL) {
   <div class="page-banner" style="background-image: url('<?php echo $bgImageURL; ?>')">
     <div class="page-banner__content container">
       <?php if ($subtitle): ?>
-        <p class="page-banner__subtitle"><?php echo esc_html($subtitle); ?></p>
+        <h1 class="page-banner__title"><?php echo esc_html($subtitle); ?></h1>
       <?php endif; ?>
     </div>
   </div>
