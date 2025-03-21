@@ -142,6 +142,12 @@ main {
   margin-left: 30px;
 }
 
+.main-nav-wrapper {
+  display: flex;
+  width: inherit;
+  margin: 0 auto;
+}
+
 .main-nav {
   margin: 0 auto;
   display: flex;
@@ -219,10 +225,6 @@ main {
   background-color: #605e5e;
   margin: 4px 0;
   transition: 0.4s;
-}
-
-.main-nav-wrapper {
-  display: flex;
 }
 
 @media screen and (max-width: 768px) {
@@ -311,8 +313,12 @@ main {
   position: relative;
   width: 100%;
   text-align: center;
-  height: 200px;
+  height: 150px;
   z-index: 1;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-width: 530px) {
@@ -329,7 +335,7 @@ main {
   font-family: "Monsterrat";
   font-weight: 500;
   text-transform: uppercase;
-  margin-top: 96px;
+  margin-top: 70px;
   text-shadow: 1px 2px #575963;
   font-size: 36px;
   color: #fff;

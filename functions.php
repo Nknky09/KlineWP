@@ -45,7 +45,7 @@ function kline_features() {
   add_theme_support('post-thumbnails');
   add_theme_support('wp-block-styles');
   add_theme_support('align-wide');
-  add_image_size('pageBanner', 1500, 350, true);
+  add_image_size('pageBanner', 1500, 300, true);
 }
 
 add_action('after_setup_theme', 'kline_features');
