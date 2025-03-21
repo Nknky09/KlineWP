@@ -1,11 +1,13 @@
 <?php get_header(); 
+/*
+Template Name: About Page Template
+*/
 pageBanner();?>
 
 <main>
     
-    <div class="content-about">
-       
-        <div class="container-about">
+    <div class="section-background section-modern reveal">
+          <div class="container section-content section-glass">
             <?php
             // Start the loop
             while ( have_posts() ) {

@@ -32,7 +32,7 @@ function pageBanner($args = NULL) {
 
 function kline_files() {
   wp_enqueue_script('googleMap', '//maps.googleapis.com/maps/api/js?key=AIzaSyBzqVkPiLgOIHI0j8U_MXQ8Fi4RhsRhkac', NULL, '1.0', true);
-  wp_enqueue_script('main-kline-js', get_theme_file_uri('/app.js'), '1.0', true);
+  wp_enqueue_script('main-kline-js', get_theme_file_uri('/map.js'), '1.0', true);
   wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
   wp_enqueue_style('phosphor-icons', 'https://unpkg.com/@phosphor-icons/web');
   wp_enqueue_style('kline_main_styles', get_theme_file_uri('/build/index.css'));

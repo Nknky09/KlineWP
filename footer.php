@@ -11,7 +11,7 @@
       </footer>
     </main>
 
-    <script src="<?php echo get_template_directory_uri(); ?>/app.js" ></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/map.js" ></script>
     
     <script
       async
@@ -19,28 +19,7 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlHVc9vVpvV8WZ74gnnbH6zg7htg9uFe4&callback=initMap"
     ></script>
 
-    <script>
-      const reveals = document.querySelectorAll('.reveal');
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('active');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.1 });
-
-      reveals.forEach(el => observer.observe(el));
-    </script>
-
-    <script>
-      const toggle = document.getElementById("mobileToggle");
-      const navWrapper = document.getElementById("mainNavWrapper");
-
-      toggle.addEventListener("click", () => {
-        navWrapper.classList.toggle("show");
-      });
-    </script>
+    <script src="<?php echo get_template_directory_uri(); ?>/app.js"></script>
 
     <?php wp_footer(); ?>
   </body>
