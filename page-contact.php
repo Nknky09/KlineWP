@@ -3,9 +3,8 @@ pageBanner();?>
 
 
     
-    <div class="content-contact">
-       
-        <div class="container-contact">
+     <div class="section-background section-modern reveal">
+          <div class="container section-content section-glass">
             <?php
             // Start the loop
             while ( have_posts() ) {
