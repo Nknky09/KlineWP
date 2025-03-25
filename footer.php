@@ -4,8 +4,8 @@
             <p>© Copyright K Line Logistics 2025</p>
           </div>
           <div class="footer-right">
-            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/logo/facebook-logo.svg"/></a>
-            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/logo/linkedin-logo.svg"/></a>
+            <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/logo/facebook-logo.png"/></a>
+            <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/logo/linkedin-logo.png"/></a>
           </div>
         </div>
       </footer>
