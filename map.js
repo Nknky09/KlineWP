@@ -27,6 +27,10 @@ function tryInitMap(retry = 0) {
   initMap();
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  tryInitMap();
+});
+
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: initialZoom,
@@ -156,3 +160,5 @@ function initMap() {
       console.error("Error loading stores.json:", error);
     });
 }
+
+window.initMap = initMap;

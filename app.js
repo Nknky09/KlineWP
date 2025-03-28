@@ -1,4 +1,4 @@
-//Reveal Container //
+// Reveal Container
 const reveals = document.querySelectorAll(".reveal");
 const observer = new IntersectionObserver(
   entries => {
@@ -11,21 +11,21 @@ const observer = new IntersectionObserver(
   },
   { threshold: 0.1 }
 );
-
-//Mobile Toggle Hamburger Navigation Menu //
 reveals.forEach(el => observer.observe(el));
 
+// Hamburger Toggle
 const toggle = document.getElementById("mobileToggle");
 const navWrapper = document.getElementById("mainNavWrapper");
 
-toggle.addEventListener("click", () => {
-  navWrapper.classList.toggle("show");
-});
+if (toggle && navWrapper) {
+  toggle.addEventListener("click", () => {
+    navWrapper.classList.toggle("show");
+  });
+}
 
-//Popup confirmation redirect external site//
+// External Link Confirmation
 document.addEventListener("DOMContentLoaded", function () {
   const currentHost = this.location.hostname;
-
   document.querySelectorAll("a[href]").forEach(link => {
     const href = link.getAttribute("href");
     const url = new URL(href, location.href);
@@ -41,9 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const confirmLeave = confirm(
           "You are now leaving our website. Click OK to continue"
         );
-        if (!confirmLeave) {
-          e.preventDefault();
-        }
+        if (!confirmLeave) e.preventDefault();
       });
     }
   });
