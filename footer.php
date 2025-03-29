@@ -13,14 +13,7 @@
     </main>
 
     <script src="<?php echo get_template_directory_uri(); ?>/app.js" ></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/map.js" ></script>
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlHVc9vVpvV8WZ74gnnbH6zg7htg9uFe4&callback=initMap"
-    ></script>
-
-      
+     
        </script>
 
     <?php wp_footer(); ?>

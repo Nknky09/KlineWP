@@ -32,6 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function initMap() {
+  const mapElement = document.getElementById("map");
+  if (!mapElement) return;
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: initialZoom,
     center: initialCenter,
