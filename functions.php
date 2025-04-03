@@ -6,28 +6,17 @@ function pageBanner($args = NULL) {
   $subtitle = get_field('page_banner_subtitle');
   $bgImage = get_field('page_banner_background_image');
 
-  // Safely extract the URL from the array
+  // Only render the banner if a background image is present
   if (is_array($bgImage) && isset($bgImage['url'])) {
     $bgImageURL = esc_url($bgImage['url']);
-  } else {
-    $bgImageURL = ''; // fallback or default image URL
-  }
-
-  $bgImageURL = isset($bgImage['url']) ? esc_url($bgImage['url']) : get_template_directory_uri() . '/img/shaah-shahidh--subrrYxv8A-unsplash.jpg';
-
-
-  ?>
-  <div class="page-banner" style="background-image: url('<?php echo $bgImageURL; ?>')">
-    <div class="page-banner__content container">
-      <?php if ($subtitle): ?>
-        <h1 class="page-banner__title"><?php echo esc_html($subtitle); ?></h1>
-      <?php endif; ?>
+    ?>
+    <div class="page-banner" style="background-image: url('<?php echo $bgImageURL; ?>')">
+      <div class="page-banner__content container">
+      </div>
     </div>
-  </div>
-  <?php
+    <?php
+  }
 }
-
-
 
 
 function kline_files() {
@@ -45,7 +34,7 @@ function kline_features() {
   add_theme_support('post-thumbnails');
   add_theme_support('wp-block-styles');
   add_theme_support('align-wide');
-  add_image_size('pageBanner', 1500, 350, true);
+  add_image_size('pageBanner', 1500, 300, true);
 }
 
 add_action('after_setup_theme', 'kline_features');

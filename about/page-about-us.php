@@ -2,7 +2,7 @@
 /*
 Template Name: About Page Template
 */
-pageBanner();?>
+?>
 
 <main>
     
