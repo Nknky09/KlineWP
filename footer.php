@@ -5,7 +5,8 @@
           </div>
           <div class="footer-center">
             <a href="<?php echo site_url('/privacy-policy') ?>">Privacy Policy</a>
-            <a href="<?php echo site_url('/termsofuse') ?>">Terms Of Use</a>
+            <a href="<?php echo site_url('/terms-of-use') ?>">Terms Of Use</a>
+            <a href="<?php echo site_url('/disclaimer') ?>">Disclaimer</a>
           </div>
 
           <div class="footer-right">
