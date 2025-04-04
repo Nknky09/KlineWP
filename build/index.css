@@ -621,6 +621,16 @@ footer {
   align-items: center;
 }
 
+.footer-center a {
+  text-decoration: none;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+.footer-center a:hover {
+  color: black;
+}
+
 .footer-container p {
   color: #7e7e7e;
   font-size: 11px;
@@ -647,6 +657,10 @@ footer {
 }
 
 /* map styling */
+
+#map-container {
+  height: 800px;
+}
 
 #map {
   height: 700px;

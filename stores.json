@@ -12,7 +12,9 @@
         "hours": "9am - 6pm",
         "description": "145-68 228th St Unit 2, Springfield Gardens, NY 11413",
         "name": "K Line Logistics - New York",
+        "city": "Springfield Gardens",
         "state": "New York",
+        "zip": "11413",
         "phone": "+1 (718) 520-1658",
         "url": "https://maps.app.goo.gl/NvkZE1ehpAbdaRYe6",
         "storeid": "01"
@@ -29,7 +31,9 @@
         "hours": "9am - 6pm",
         "description": "19701 Vermont Ave, Torrance, CA 90502",
         "name": "K Line Logistics - Los Angeles",
-        "state": "Torrance, California",
+        "city": "Torrance",
+        "state": "California",
+        "zip": "90502",
         "phone": "+1 (310) 615-0555",
         "url": "https://maps.app.goo.gl/id9YhQajWYUmnhru9",
         "storeid": "02"
@@ -46,7 +50,9 @@
         "hours": "8am - 5pm",
         "description": "265 S Prospect Ave, Itasca, IL 60143",
         "name": "K Line Logistics - Chicago",
+        "city": "Itasca",
         "state": "Chicago",
+        "zip": "60143",
         "phone": "+1 (630) 250-0337",
         "url": "https://maps.app.goo.gl/K3shyp6yFey81u9f8",
         "storeid": "03"
@@ -62,7 +68,9 @@
         "hours": "8am - 5pm",
         "description": "4345 International Pkwy Suite 101, Atlanta, GA 30354",
         "name": "K Line Logistics - Atlanta",
+        "city": "Atlanta",
         "state": "Georgia",
+        "zip": "30354",
         "phone": "+1 (404) 363-9000",
         "url": "https://maps.app.goo.gl/GHWCfH8FesNiC3eo9",
         "storeid": "04"
@@ -79,7 +87,9 @@
         "hours": "9am - 6pm",
         "description": "9160 Sterling Street Suite 120, Irving, TX 75063",
         "name": "K Line Logistics - Dallas",
+        "city": "Dallas",
         "state": "Texas",
+        "zip": "75063",
         "phone": "+1 (817) 481-7841",
         "url": "https://maps.app.goo.gl/LKj584dx2ddekrDj7",
         "storeid": "05"
@@ -94,8 +104,10 @@
         "category": "Branch",
         "hours": "9am - 6pm",
         "description": "40 A Broderick Road, Burlingame, CA 94010",
-        "name": "K Line Logistics - San Fransisco",
+        "name": "K Line Logistics - San Francisco",
+        "city": "San Francisco",
         "state": "California",
+        "zip": "94010",
         "phone": "+1 (650) 993-7370",
         "url": "https://maps.app.goo.gl/3syekWSjkEQnY5dW6",
         "storeid": "06"
@@ -111,7 +123,9 @@
         "hours": "9am - 6pm",
         "description": "855 South 192nd Street Seatac, WA 96148",
         "name": "K Line Logistics - Seattle",
+        "city": "Seattle",
         "state": "Washington",
+        "zip": "96148",
         "phone": "+1 (206) 824-1785",
         "url": "https://maps.app.goo.gl/b8UhiwemM1VU3RkF7",
         "storeid": "07"
@@ -128,7 +142,9 @@
         "hours": "9am - 6pm",
         "description": "7801 S Jackson Road Pharr, TX 78577",
         "name": "K Line Logistics - McAllen",
+        "city": "McAllen",
         "state": "Texas",
+        "zip": "78577",
         "phone": "+1 (956) 843-7665",
         "url": "https://maps.app.goo.gl/4LGAPoBLTZYXXZJTA",
         "storeid": "08"
@@ -145,7 +161,9 @@
         "hours": "9am - 5pm",
         "description": "7220 Trade St, Suite 216 San Diego, CA 92121",
         "name": "K Line Logistics - San Diego",
+        "city": "San Diego",
         "state": "California",
+        "zip": "92121",
         "phone": "+1 (858) 695-8270",
         "url": "https://maps.app.goo.gl/G74Jx6xmPbaj7HVy5",
         "storeid": "09"
@@ -162,7 +180,9 @@
         "hours": "8am - 5pm",
         "description": "60 E Rio Salado Parkway, Suite 900 Tempe, AZ 85281",
         "name": "K Line Logistics - Phoenix",
+        "city": "Phoenix",
         "state": "Arizona",
+        "zip": "85281",
         "phone": "+1 (480) 366-1472",
         "url": "https://maps.app.goo.gl/JT7tV6mHEa9yi2MN9",
         "storeid": "10"
@@ -179,7 +199,9 @@
         "hours": "8am - 5pm",
         "description": "2315 Westbrooke Drive Columbus, Ohio 43228",
         "name": "K Line Logistics - Columbus",
+        "city": "Columbus",
         "state": "Ohio",
+        "zip": "43228",
         "phone": "+1 (614) 987-1165",
         "url": "https://maps.app.goo.gl/WX1ZHkVh7BjLUfzi9",
         "storeid": "11"
@@ -196,7 +218,9 @@
         "hours": "8am - 5pm",
         "description": "824 Euclid Ave, Suite A-202B Lexington, KY 40502",
         "name": "K Line Logistics - Lexington",
+        "city": "Lexington",
         "state": "Kansas",
+        "zip": "40502",
         "phone": "+1 (859) 523-0305",
         "url": "https://maps.app.goo.gl/vYBkATqok3sQAeA87",
         "storeid": "12"
@@ -213,7 +237,9 @@
         "hours": "8am - 5pm",
         "description": "233 South 13th Street, Suite 1126 Lincoln, NE 68508",
         "name": "K Line Logistics - Lincoln",
+        "city": "Lincoln",
         "state": "Nebraska",
+        "zip": "68508",
         "phone": "+1 (402) 835-5664",
         "url": "https://maps.app.goo.gl/a5rNVatFVBnaFaUp9",
         "storeid": "13"
@@ -230,7 +256,9 @@
         "hours": "8am - 5pm",
         "description": "5960 Fairview Rd Suite 400, Charlotte NC 28210",
         "name": "K Line Logistics - Charlotte",
+        "city": "Charlotte",
         "state": "North Carolina",
+        "zip": "28210",
         "phone": "+1 (704) 414-6550",
         "url": "https://maps.app.goo.gl/mDRBMBzs1DkLyRks5",
         "storeid": "14"

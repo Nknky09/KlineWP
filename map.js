@@ -16,9 +16,9 @@ const mapStyle = [
 
 function tryInitMap(retry = 0) {
   if (typeof google === "undefined" || typeof google.maps === "undefined") {
-    if (retry < 5) {
+    if (retry < 4) {
       console.warn(`Google Maps not ready, retrying... (${retry + 1})`);
-      setTimeout(() => tryInitMap(retry + 1), 600);
+      setTimeout(() => tryInitMap(retry + 1), 500);
     } else {
       console.error("Google Maps API failed to load.");
     }
@@ -144,12 +144,23 @@ function initMap() {
           const items = document.querySelectorAll(
             ".sidebar-map-wrapper .location-item"
           );
-          items.forEach(item => {
-            const locationText =
-              item.querySelector("a")?.textContent.toLowerCase() || "";
-            const stateText =
-              item.getAttribute("data-state")?.toLowerCase() || "";
-            if (locationText.includes(keyword) || stateText.includes(keyword)) {
+
+          items.forEach((item, index) => {
+            const props = featuresData[index]?.properties || {};
+
+            const name = props.name?.toLowerCase() || "";
+            const state = props.state?.toLowerCase() || "";
+            const city = props.city?.toLowerCase() || "";
+            const zip = props.zip?.toLowerCase() || "";
+            const desc = props.description?.toLowerCase() || "";
+
+            if (
+              name.includes(keyword) ||
+              state.includes(keyword) ||
+              city.includes(keyword) ||
+              zip.includes(keyword) ||
+              desc.includes(keyword)
+            ) {
               item.style.display = "flex";
             } else {
               item.style.display = "none";
