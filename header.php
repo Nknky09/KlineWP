@@ -34,7 +34,7 @@
                 <ul class="drop-down">
                   <li><a href="<?php echo site_url('/about/about-us') ?>">About Us</a></li>
                   <li><a href="<?php echo site_url('/about/our-history') ?>">Our History</a></li>
-                  <li><a href="<?php echo site_url('/about/csr') ?>">CSR</a></li>
+                  <li><a href="<?php echo site_url('/about/csr') ?>">Sustainability</a></li>
                 </ul>
               </li>
               <li>
@@ -77,11 +77,8 @@
                 </ul>
               </li>
 
-              <li><a>News</a>
-                <ul class="drop-down">
-                  <li><a >Press Release</a></li>
-                  <li><a href="<?php echo site_url('news') ?>">Company News</a></li>
-                </ul>
+              <li><a href="<?php echo site_url('news') ?>">News</a>
+                
                </li> 
               <li><a href="<?php echo site_url('contact') ?>">Contact</a></li>
             </ul>
