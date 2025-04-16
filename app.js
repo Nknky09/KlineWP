@@ -26,6 +26,7 @@ if (toggle && navWrapper) {
 // External Link Confirmation
 document.addEventListener("DOMContentLoaded", function () {
   const currentHost = this.location.hostname;
+
   document.querySelectorAll("a[href]").forEach(link => {
     const href = link.getAttribute("href");
     const url = new URL(href, location.href);
@@ -37,9 +38,12 @@ document.addEventListener("DOMContentLoaded", function () {
       href.startsWith("#");
 
     if (!isInternal && !isSafeProtocol) {
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
+
       link.addEventListener("click", function (e) {
         const confirmLeave = confirm(
-          "You are now leaving our website. Click OK to continue"
+          "\n Redirecting to www.klinelogistics.com \n\n You are now leaving our website. \n\n Click OK to continue"
         );
         if (!confirmLeave) e.preventDefault();
       });
