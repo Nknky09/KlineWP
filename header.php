@@ -34,7 +34,7 @@
                 <ul class="drop-down">
                   <li><a href="<?php echo site_url('/about/about-us') ?>">About Us</a></li>
                   <li><a href="<?php echo site_url('/about/our-history') ?>">Our History</a></li>
-                  <li><a href="<?php echo site_url('/about/csr') ?>">Sustainability</a></li>
+                  
                 </ul>
               </li>
               <li>
