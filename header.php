@@ -44,7 +44,7 @@
                   <li><a href="<?php echo site_url('/services/ocean-export') ?>">Ocean Cargo</a></li>
                   <li><a href="<?php echo site_url('/services/warehouse') ?>">Warehouse</a></li>
                   <li><a href="<?php echo site_url('/services/customs') ?>">Customs Clearance</a></li>
-                  <li><a href="<?php echo site_url('/services/logistics') ?>">Logistics</a>
+                  <li><a href="<?php echo site_url('/services/logistics') ?>">Cross Border</a>
                   </li>
                 </ul>
               </li>
@@ -56,7 +56,7 @@
                   <li><a href="<?php echo site_url('/industries/automotive') ?>">Automotive</a></li>
                   <li><a href="<?php echo site_url('/industries/railway') ?>">Railway</a></li>
                   <li><a href="<?php echo site_url('/industries/perishables') ?>">Perishables</a></li>
-                  <li><a href="https://www.klinelogistics.com/en/service/coldchain/">Other</a></li>
+                  <li><a href="https://www.klinelogistics.com/en/service/coldchain/">Cold Chain</a></li>
                 </ul>
               </li>
 

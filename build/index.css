@@ -389,11 +389,17 @@ main {
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0.9;
 }
 
 .bg-logo {
   opacity: 1;
   width: 600px;
+  height: auto;
+}
+
+.bg-logo {
+  width: 550px;
   height: auto;
 }
 
@@ -413,8 +419,6 @@ main {
   position: relative;
   top: 35%;
   left: 10%;
-  width: 460px;
-  height: auto;
 }
 
 .home-logo4 {
