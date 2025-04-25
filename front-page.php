@@ -11,23 +11,17 @@
               <h1>About &nbsp;&nbsp;"K" Line Logistics</h1>
               <div class="title-line"></div>
               <p>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                “K”Line Logistics, a core subsidiary of Kawasaki Kisen Kaisha, Ltd. (K LINE)., 
+                is a leading international logistics company including freight forwarding and 
+                customs brokerage services with almost a half century of experience.  
               </p>
               <p>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Since our beginning in Tokyo in 1960 our company has continued to grow with over 70 locations employing over 1,600 professionals worldwide. In addition to these offices, “K” Line Logistics has agencies in 70 other countries under partnership arrangements that assure full coverage throughout our global network.
               </p>
+              <p>
+                In the United States, “K” Line Logistics (USA), Inc. offers services from 14 offices strategically located in New York, Chicago, Columbus, Lexington, Atlanta, Charlotte, Dallas, McAllen (Texas), Seattle, San Francisco, Los Angeles, San Diego, Phoenix, Lincoln.
+                </p>
+
               <div class="icon-home">
                   <img class="icon-home-img icon-one" src="<?php echo get_template_directory_uri(); ?>/img/ph--airplane-takeoff-light.png"/>
                   <img class="icon-home-img icon-two" src="<?php echo get_template_directory_uri(); ?>/img/fluent--vehicle-ship-20-regular.png"/>
@@ -50,7 +44,7 @@
           <div class="grid-cols-2">
             <div class="card top-left">
               <div class="image-container">
-                <a href="#"><img class="column-img" src="<?php echo get_template_directory_uri(); ?>/img/air-cargo.jpg">
+                <a href="#"><img class="column-img" src="<?php echo get_template_directory_uri(); ?>/img/aircargo-home.jpg">
                 <span class="column-title"><p>Air Cargo</p></span></a>
               </div>
               <div class="column-bottom">
@@ -75,7 +69,7 @@
             </div>
             <div class="card bottom-left">
               <div class="image-container">
-                <a href="#"><img class="column-img" src="<?php echo get_template_directory_uri(); ?>/img/services-warehouse.jpg"/>
+                <a href="#"><img class="column-img" src="<?php echo get_template_directory_uri(); ?>/img/warehouse-home.jpg"/>
               <span class="column-title"><p>Warehouse</p></span></a>
               </div>
               <div class="column-bottom">
@@ -88,7 +82,7 @@
           
             <div class="card bottom-right">
               <div class="image-container">
-                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/services-custom.jpg" />
+                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/customs-home.jpg" />
                 <span class="column-title"><p>Customs Clearance</p></span></a>
               </div>
               <div class="column-bottom">
