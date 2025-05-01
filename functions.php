@@ -40,6 +40,7 @@ function kline_features() {
 
 add_action('after_setup_theme', 'kline_features');
 
+
 function klineMapKey($api) {
   $api['key'] = 'AIzaSyBzqVkPiLgOIHI0j8U_MXQ8Fi4RhsRhkac';
   return $api;

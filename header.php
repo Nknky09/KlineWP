@@ -77,7 +77,13 @@
                 </ul>
               </li>
 
-              <li><a href="<?php echo site_url('news') ?>">News</a>
+              <li><a>News</a>
+                <ul class="drop-down">
+                  <li><a href="<?php echo site_url('/news/press') ?>">Press Release</a></li>
+                  <li><a href="<?php echo site_url('/news/posts') ?>">Posts</a></li>
+                  
+                </ul>
+              </li>
                 
                </li> 
               <li><a href="<?php echo site_url('contact') ?>">Contact</a></li>
