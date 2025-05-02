@@ -29,7 +29,13 @@
                   <img class="icon-home-img icon-two" src="<?php echo get_template_directory_uri(); ?>/img/fluent--vehicle-ship-20-regular.png"/>
                   <img class="icon-home-img icon-three" src="<?php echo get_template_directory_uri(); ?>/img/mdi-light--truck.png"/>
               </div>
-              <br>
+              
+              <div class="container-contact-front">
+              <a href="/contact" class="elementor-contact-button">
+                Contact Us
+              </a>
+              
+            </div>
               
               <a href="#services"
                 ><img class="arrow-icon" src="<?php echo get_template_directory_uri(); ?>/img/Slide Up.png"
@@ -112,18 +118,7 @@
         </div>
 
         
-        <div class="section-background section-modern reveal">
-          <div class="container section-content section-glass">
-            
-            <h2 class="font-contact-title">Contact</h2>   
-            <div class="title-line"></div>
-              
-            <div class="container-contact-front">
-              <?php echo do_shortcode('[wpforms id="164"]'); ?>
-              
-            </div>
-          </div>
-        </div>
+      
       </content>
 
 <?php get_footer();?>
