@@ -52,7 +52,7 @@
           <div class="grid-cols-2">
             <div class="card top-left">
               <div class="image-container">
-                <a href="#"><img class="column-img" src="<?php echo get_template_directory_uri(); ?>/img/aircargo-home.jpg">
+                <a href="<?php echo site_url('/services/air-export') ?>"><img class="column-img" src="<?php echo get_template_directory_uri(); ?>/img/aircargo-home.jpg">
                 </a>
               </div>
               <div class="column-bottom">
@@ -65,11 +65,11 @@
 
             <div class="card top-right">
               <div class="image-container">
-                <a href="#"><img class="column-img" src="<?php echo get_template_directory_uri(); ?>/img/services-ocean.jpg" >
+                <a href="<?php echo site_url('/services/ocean-export') ?>"><img class="column-img" src="<?php echo get_template_directory_uri(); ?>/img/services-ocean.jpg" >
                 </a>
               </div>
               <div class="column-bottom">
-                <a href="#services" class="column-arrow-icon">
+                <a href="<?php echo site_url('/services/warehouse') ?>" class="column-arrow-icon">
                   <img src="<?php echo get_template_directory_uri(); ?>/img/Slide Side.png" />
                   <p>Ocean Cargo</p>
                 </a>
@@ -81,7 +81,7 @@
               </a>
               </div>
               <div class="column-bottom">
-                <a href="#services" class="column-arrow-icon">
+                <a href="<?php echo site_url('/services/customs') ?>" class="column-arrow-icon">
                   <img src="<?php echo get_template_directory_uri(); ?>/img/Slide Side.png" />
                   <p>Warehouse</p>
                 </a>
@@ -105,6 +105,7 @@
         <div class="content-banner2"></div>
        
          <div class="container section-content content-locations reveal" id="map-container">
+         
           <h1>USA Locations</h1>
           <div class="title-line"></div>
             <div class="container-locations">
@@ -114,11 +115,14 @@
                   <div class="sidebar-map-wrapper" id="sidebar-map-wrapper">
                   </div>
               </div>
+
+         
           </div>
+          
         </div>
 
         
-      
+
       </content>
 
 <?php get_footer();?>

@@ -333,7 +333,7 @@ main {
   position: relative;
   width: 100%;
   text-align: center;
-  height: 100px;
+  height: 300px;
   z-index: 1;
 
   background-size: cover;
@@ -373,6 +373,7 @@ main {
 .page-banner__bg-image {
   background-size: cover;
   position: absolute;
+  height: 150px;
 }
 
 .content-banner {
@@ -662,6 +663,8 @@ footer {
 
 #map-container {
   height: 800px;
+  margin-bottom: 150px;
+  width: 100%;
 }
 
 #map {
