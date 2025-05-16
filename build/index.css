@@ -665,7 +665,7 @@ footer {
 /* map styling */
 
 #map-container {
-  height: 800px;
+  height: auto;
   width: 100%;
   max-width: 1000px;
   aspect-ratio: 4 / 3;
