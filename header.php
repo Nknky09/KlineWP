@@ -2,6 +2,7 @@
 <html <?php language_attributes(); ?>>
   <head>
     <meta charset="<?php bloginfo('charset'); ?>">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <?php wp_head(); ?>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>

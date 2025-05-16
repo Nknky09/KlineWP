@@ -9,11 +9,11 @@
         <div class="section-background section-modern reveal">
           <div class="container section-content section-glass">
             <div class="container-about">
-              <h1>About &nbsp;&nbsp;"K" Line Logistics</h1>
+              <h1>About "K" Line Logistics</h1>
 
               <div class="title-line"></div>
               <p>
-                “K”Line Logistics, a core subsidiary of Kawasaki Kisen Kaisha, Ltd. (K LINE)., 
+                “K” Line Logistics, a core subsidiary of Kawasaki Kisen Kaisha, Ltd. (K LINE)., 
                 is a leading international logistics company including freight forwarding and 
                 customs brokerage services with almost a half century of experience.  
               </p>
