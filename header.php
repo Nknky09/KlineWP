@@ -9,28 +9,24 @@
 
     <title>"K" LINE LOGISTICS USA</title>
   </head>
-
   <body>
     <main>
       <header class="main-header">
-        
         <div class="header-position">
           <div class="logo">
             <a href="<?php echo site_url() ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" /></a>
-
             <!-- Hamburger Button (visible on mobile only) -->
           <div class="mobile-menu-toggle" id="mobileToggle">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
           </div>
-
           </div>
 
           <div class="main-nav-wrapper" id="mainNavWrapper">
           <nav class="main-nav">
             <ul>
-              
+
               <li><a>Company</a>
                 <ul class="drop-down">
                   <li><a href="<?php echo site_url('/about/about-us') ?>">About Us</a></li>
@@ -44,7 +40,7 @@
                   <li><a href="<?php echo site_url('/services/air-export') ?>">Air Cargo</a></li>
                   <li><a href="<?php echo site_url('/services/ocean-export') ?>">Ocean Cargo</a></li>
                   <li><a href="<?php echo site_url('/services/warehouse') ?>">Warehouse</a></li>
-                  <li><a href="<?php echo site_url('/services/customs') ?>">Customs Clearance</a></li>
+                  <li><a href="<?php echo site_url('/services/customs') ?>">Customs Brokerage</a></li>
                   <li><a href="<?php echo site_url('/services/logistics') ?>">Cross Border</a>
                   </li>
                 </ul>
@@ -81,7 +77,7 @@
               <li><a>News</a>
                 <ul class="drop-down">
                   <li><a href="<?php echo site_url('/news/press') ?>">Press Release</a></li>
-                  <li><a href="<?php echo site_url('/news/posts') ?>">Posts</a></li>
+                  <!-- <li><a href="#">Posts</a></li> -->
                   
                 </ul>
               </li>
