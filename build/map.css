@@ -1,0 +1,222 @@
+/* map styling */
+
+#map-container {
+  height: auto;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 4 / 3;
+  margin: 0 auto 100px auto;
+}
+
+#map {
+  height: 100%;
+  width: 77%;
+  min-height: 700px;
+  float: right;
+  border: 1px solid #ddd;
+}
+
+/* Container next to map */
+.sidebar-map {
+  width: 22.5%;
+  height: 100%;
+  max-height: 700px;
+  background-color: #ffffff;
+  border-right: 2px solid #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.05);
+  z-index: 2;
+}
+
+/* Sidebar Inner Wrapper */
+.sidebar-map-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #444;
+  overflow-y: auto;
+}
+
+/* Each Location Item */
+.sidebar-map-wrapper .location-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #cd191c;
+}
+
+.sidebar-map-wrapper .location-item:hover a {
+  background-color: #f8f8f8;
+  transform: translateX(3px);
+  border-left-color: #a91313;
+  color: #cd191c;
+}
+
+.sidebar-map-wrapper .location-item a {
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 1.3;
+  transition: color 0.2s ease;
+  word-break: break-word;
+}
+
+.location-item a {
+  font-family: "Inter";
+}
+
+/* Icon in Location Item 
+.sidebar-map-wrapper .location-item img {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}*/
+
+/* Link/Text */
+.sidebar-map-wrapper .location-item a {
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 1.3;
+  transition: color 0.2s ease;
+}
+
+@media screen and (max-width: 768px) {
+  #map-container {
+    aspect-ratio: unset;
+  }
+
+  #map {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .sidebar-map {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #map {
+    min-height: 320px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #map {
+    min-height: 280px;
+  }
+
+  .sidebar-map-wrapper .location-item {
+    font-size: 11px;
+    padding: 6px 8px;
+  }
+}
+
+/* Sidebar Search Input */
+.map-location-search {
+  padding: 10px 14px;
+  margin: 0 auto;
+  width: 60%;
+  border: 1px solid #9b9b9b;
+  border-radius: 8px;
+  font-size: 13px;
+  font-family: "Inter";
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.map-location-search:focus {
+  border-color: #cd191c;
+  box-shadow: 0 0 3px rgba(205, 25, 28, 0.3);
+}
+
+/* Reset Map Button */
+.reset-map-button {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 8px 14px;
+  border-radius: 6px;
+  margin: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s ease;
+}
+.reset-map-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Shrink InfoWindow close button spacing */
+.gm-style-iw-d {
+  padding: 6px !important;
+}
+
+.gm-ui-hover-effect {
+  width: 32px !important;
+  height: 32px !important;
+  top: 6px !important;
+  right: 6px !important;
+}
+
+/* Modern InfoWindow Styling */
+.map-infowindow {
+  font-family: "Inter";
+  font-size: 13px;
+  color: #333;
+  max-width: 225px;
+  width: fit-content;
+  padding: 6px 8px;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.map-location-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #cd191c;
+  margin: 0 0 6px 0;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #eee;
+}
+
+.map-location-info {
+  margin: 4px 0;
+  font-size: 12.5px;
+  color: #444;
+  line-height: 1.4;
+}
+
+.map-direction-link {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+  font-size: 12.5px;
+  color: #0077cc;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.map-direction-link:hover {
+  text-decoration: underline;
+}
+
+.map-direction-icon {
+  height: 13px;
+  width: 13px;
+  margin-right: 6px;
+  flex-shrink: 0;
+}
+
+/* end of maps */

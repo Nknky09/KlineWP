@@ -20,12 +20,29 @@ function pageBanner($args = NULL) {
 
 
 function kline_files() {
-  wp_enqueue_script('googleMap', '//maps.googleapis.com/maps/api/js?key=AIzaSyBzqVkPiLgOIHI0j8U_MXQ8Fi4RhsRhkac', array(), '1.0', true);
-  wp_enqueue_script('main-kline-js', get_theme_file_uri('/map.js'), array(), time(), true);
-    wp_enqueue_script('kline-app-js', get_theme_file_uri('/app.js'), array(), time(), true);
-  wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
-  wp_enqueue_style('phosphor-icons', 'https://unpkg.com/@phosphor-icons/web');
-  wp_enqueue_style('kline_main_styles', get_theme_file_uri('/build/index.css'));
+  global $post;
+
+  wp_enqueue_script('kline-app-js', get_theme_file_uri('/app.js'), array(), time(), true);
+
+  $load_map = false;
+
+  if (is_front_page() || is_home()) {
+    $load_map = true;
+  }
+
+  $template_path = get_page_template();
+  if ($template_path !== false && basename($template_path) === 'page-locations.php') {
+    $load_map = true;
+  }
+
+  if (is_page('about-us') || (isset($post) && strpos($post->post_content, 'id="map"') !== false)) {
+    $load_map = true;
+  }
+
+  if ($load_map) {
+    wp_enqueue_script('googleMap', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBzqVkPiLgOIHI0j8U_MXQ8Fi4RhsRhkac&callback=initMap', array(), null, true);
+    wp_enqueue_script('main-kline-js', get_theme_file_uri('/map.js'), array(), time(), true);
+  }
 }
 
 add_action('wp_enqueue_scripts', 'kline_files');
@@ -55,6 +72,5 @@ function remove_admin_bar() {
 }
 
 add_action('after_setup_theme', 'remove_admin_bar');
-
 
 ?>
