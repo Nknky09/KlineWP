@@ -2,7 +2,7 @@
 pageBanner(); ?>
 
 <main>
-  <div class="section-background section-modern reveal">
+  <div class="section-background section-modern-notr">
     <div class="container section-content section-glass">
       <?php 
         while ( have_posts() ) {
