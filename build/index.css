@@ -338,13 +338,17 @@ main {
 }
 
 .page-banner h1,
-h2 {
+.page-banner h2 {
   font-family: "Monsterrat";
   font-weight: 400;
   margin-top: 70px;
   text-shadow: 1px 3px #575963;
   font-size: 33px;
   color: #fff;
+}
+
+h2 {
+  text-shadow: none;
 }
 
 .page-banner__title {

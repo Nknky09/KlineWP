@@ -21,6 +21,7 @@ function pageBanner($args = NULL) {
 
 function kline_files() {
   global $post;
+  wp_enqueue_style('kline-index-style', get_theme_file_uri('/build/index.css'), array(), time());
 
   wp_enqueue_script('kline-app-js', get_theme_file_uri('/app.js'), array(), time(), true);
 
@@ -40,8 +41,14 @@ function kline_files() {
   }
 
   if ($load_map) {
-    wp_enqueue_script('googleMap', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBzqVkPiLgOIHI0j8U_MXQ8Fi4RhsRhkac&callback=initMap', array(), null, true);
+    wp_enqueue_style('map-style', get_theme_file_uri('/build/map.css'), array(), time());
+
     wp_enqueue_script('main-kline-js', get_theme_file_uri('/map.js'), array(), time(), true);
+    
+    add_action('wp_footer', function() {
+      echo '<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzqVkPiLgOIHI0j8U_MXQ8Fi4RhsRhkac&callback=initMap"></script>';
+    }, 100);
+    
   }
 }
 

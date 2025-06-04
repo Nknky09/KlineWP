@@ -5,8 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <style><?php include get_template_directory() . '/build/critical.css'; ?></style>
+
+    <?php /*
     <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/build/index.css" as="style" onload="this.onload=null; this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/build/index.css"></noscript>
+    */ ?>
+
     <?php wp_head(); ?>
 
     <?php if (is_front_page()) : ?>
