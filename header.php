@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <style><?php include get_template_directory() . '/build/critical.css'; ?></style>
 
-    <?php /*
     <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/build/index.css" as="style" onload="this.onload=null; this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/build/index.css"></noscript>
-    */ ?>
-
+    
     <?php wp_head(); ?>
 
     <?php if (is_front_page()) : ?>
@@ -18,7 +16,7 @@
       <meta name="description" content="K Line Logistics offers reliable freight forwarding, warehousing, customs brokerage, with a large international network from the U.S., Asia, and worldwide. Air, ocean, and land transport tailored to your business industry.">
       <meta property="og:title" content="K Line Logistics USA - Trusted Freight Forwarding & Logistics Company">
       <meta property="og:description" content="Professional global logistics solutions including air, sea, and warehousing services. Serving the U.S., Asia, and beyond.">
-      <meta property="og:image" content="<?php echo site_url(); ?>/wp-content/uploads/2025/05/homebg-1024.jpg">
+      <meta property="og:image" content="<?php echo site_url(); ?>/wp-content/uploads/2025/05/home-768.jpg">
       <meta property="og:url" content="<?php echo site_url(); ?>/">
       <meta property="og:type" content="website">
     <?php endif; ?>

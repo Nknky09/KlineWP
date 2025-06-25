@@ -8,13 +8,13 @@
             <source type="image/webp" media="(max-width: 1024px)" srcset="<?php echo site_url(); ?>/wp-content/uploads/2025/05/home-1024.webp">
             <source type="image/webp" srcset="<?php echo site_url(); ?>/wp-content/uploads/2025/05/home-1920.webp" > 
             <img class="bg-image" 
-            src="<?php echo site_url();?>/wp-content/uploads/2025/05/home-1920.webp"
+            src="<?php echo site_url();?>/wp-content/uploads/2025/05/home-1024.webp"
             srcset="
               <?php echo site_url(); ?>/wp-content/uploads/2025/05/home-768.webp 768w,
               <?php echo site_url(); ?>/wp-content/uploads/2025/05/home-1024.webp 1024w,
               <?php echo site_url(); ?>/wp-content/uploads/2025/05/home-1920.webp 1920w
             "
-            sizes="(max-width:768px) 100vw, (max-width: 1024px) 100vw, 100vw"
+            sizes="100vw"
             width="1920" height="990" decoding="async" fetchpriority="high" loading="eager" alt="Home page banner" />
           </picture>
            

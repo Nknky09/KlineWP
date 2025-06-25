@@ -21,7 +21,6 @@ function pageBanner($args = NULL) {
 
 function kline_files() {
   global $post;
-  wp_enqueue_style('kline-index-style', get_theme_file_uri('/build/index.css'), array(), time());
 
   wp_enqueue_script('kline-app-js', get_theme_file_uri('/app.js'), array(), time(), true);
 
