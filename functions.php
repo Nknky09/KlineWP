@@ -64,12 +64,6 @@ function kline_features() {
 add_action('after_setup_theme', 'kline_features');
 
 
-function klineMapKey($api) {
-  $api['key'] = 'AIzaSyBzqVkPiLgOIHI0j8U_MXQ8Fi4RhsRhkac';
-  return $api;
-}
-
-add_filter('acf/fields/google_map/api', 'klineMapKey');
 
 function remove_admin_bar() {
    {
